@@ -119,7 +119,7 @@ def game_hash
 end
 
 def num_points_scored(player)
-  point = nil
+  points = nil
   game_hash.each do |location, data|
     data.each do |key, value|
       if key == :players
@@ -135,4 +135,5 @@ def num_points_scored(player)
       end
     end
   end
+  points
 end
