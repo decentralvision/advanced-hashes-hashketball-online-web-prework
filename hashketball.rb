@@ -181,3 +181,23 @@ def team_names
   end
   names
 end
+
+def player_numbers
+  numbers = []
+  game_hash.each do |location, data|
+    data.each do |key, value|
+      if key == :players
+        value.each do |player_hash, data|
+          if player_hash == player
+            data.each do |statistic, num|
+              if statistic == :points
+                points = num
+              end
+            end
+          end
+        end
+      end
+    end
+  end
+  points
+end
