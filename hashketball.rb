@@ -157,3 +157,13 @@ def shoe_size(player)
   end
   shoe_size
 end
+
+def team_colors(team)
+  game_hash.each do |location, data|
+    data.each do |key, value|
+      if value == 'Brooklyn Nets'
+        game_hash[location][:colors].fetch_values
+      end
+    end
+  end
+end
