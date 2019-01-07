@@ -128,7 +128,6 @@ def num_points_scored(player)
             data.each do |statistic, num|
               if statistic == :points
                 points = num
-                binding.pry
               end
             end
           end
