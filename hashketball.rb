@@ -187,12 +187,14 @@ def player_numbers(team)
   game_hash.each do |location, data|
     data.each do |key, value|
       if value == team
-        if key == :players
-          value.each do |player_hash, data|
-            if player_hash == player
-              data.each do |statistic, num|
-                if statistic == :number
-                  numbers.push(num)
+        data.each do |key, value|
+          if key == :players
+            value.each do |player_hash, data|
+              if player_hash == player
+                data.each do |statistic, num|
+                  if statistic == :number
+                    numbers.push(num)
+                  end
                 end
               end
             end
