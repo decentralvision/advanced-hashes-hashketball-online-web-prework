@@ -211,11 +211,7 @@ def player_stats(player)
       if key == :players
         value.each do |player_hash, data|
           if player_hash == player
-            data.each do |statistic, num|
-              if statistic == :points
-                points = num
-              end
-            end
+            stats = data
           end
         end
       end
