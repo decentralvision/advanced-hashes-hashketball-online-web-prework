@@ -190,13 +190,11 @@ def player_numbers(team)
         data.each do |key, value|
           if key == :players
             value.each do |player_hash, data|
-              if player_hash == player
                 data.each do |statistic, num|
                   if statistic == :number
                     numbers.push(num)
                   end
                 end
-              end
             end
           end
         end
