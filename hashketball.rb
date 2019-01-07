@@ -159,6 +159,7 @@ def shoe_size(player)
 end
 
 def team_colors(team)
+  colors = []
   game_hash.each do |location, data|
     data.each do |key, value|
       if value == 'Brooklyn Nets'
