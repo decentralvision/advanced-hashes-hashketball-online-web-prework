@@ -220,4 +220,26 @@ def player_stats(player)
   player_stats
 end
 
-
+def big_shoe_rebounds
+  biggest_shoe_size = 0
+  rebounds = 0
+  game_hash.each do |location, data|
+    data.each do |key, value|
+      if value == team
+        data.each do |key, value|
+          if key == :players
+            value.each do |player_hash, data|
+                data.each do |statistic, num|
+                  if statistic == :shoe
+                    if num > biggest_shoe_size
+                      biggest_shoe_size = num
+                    end
+                  end
+                end
+            end
+          end
+        end
+      end
+    end
+  end
+  numbers
