@@ -199,5 +199,5 @@ def player_numbers
       end
     end
   end
-  points
+  numbers
 end
