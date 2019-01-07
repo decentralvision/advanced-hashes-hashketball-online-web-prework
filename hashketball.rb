@@ -231,7 +231,7 @@ def big_shoe_rebounds
               if statistic == :shoe
                 if num > biggest_shoe_size
                   biggest_shoe_size = num
-                  rebounds = value.fetch(:rebounds)
+                  rebounds = data.fetch(:rebounds)
                 end
               end
             end
