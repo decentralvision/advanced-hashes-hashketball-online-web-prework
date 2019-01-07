@@ -124,7 +124,7 @@ def num_points_scored(player)
       if key == :players
         value.each do |player_hash, data|
           if player_hash == player
-            game_hash[location][data][key][player_hash][:points].value
+            game_hash[location][data][key][player_hash].fetch_values(:points)
           end
         end
       end
