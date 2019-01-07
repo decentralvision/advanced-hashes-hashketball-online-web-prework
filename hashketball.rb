@@ -124,7 +124,7 @@ def num_points_scored(player)
       if key == :players
         value.each do |player_hash, data|
           if player_hash == player
-            player_hash.each do |stat, value|
+            key.each do |stat, value|
               if stat == :points
                 value
               end
