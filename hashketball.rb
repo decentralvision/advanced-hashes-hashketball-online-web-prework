@@ -204,8 +204,8 @@ def player_numbers(team)
   numbers
 end
 
-def num_points_scored(player)
-  points = 0
+def player_stats(player)
+  stats = {}
   game_hash.each do |location, data|
     data.each do |key, value|
       if key == :players
