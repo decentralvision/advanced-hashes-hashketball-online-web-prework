@@ -83,7 +83,7 @@ def game_hash
           :blocks => 15,
           :slam_dunks => 10
         },
-        'Desagna Diop' => {
+        'DeSagna Diop' => {
           :number => 2,
           :shoe => 14,
           :points => 24,
