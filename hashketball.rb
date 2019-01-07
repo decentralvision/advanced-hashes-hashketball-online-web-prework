@@ -190,8 +190,8 @@ def player_numbers
         value.each do |player_hash, data|
           if player_hash == player
             data.each do |statistic, num|
-              if statistic == :points
-                points = num
+              if statistic == :number
+                numbers.push(num)
               end
             end
           end
