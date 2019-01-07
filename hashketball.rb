@@ -205,17 +205,17 @@ def player_numbers(team)
 end
 
 def player_stats(player)
-  stats = {}
+  player_stats = {}
   game_hash.each do |location, data|
     data.each do |key, value|
       if key == :players
         value.each do |player_hash, data|
           if player_hash == player
-            stats = data
+            player_stats = data
           end
         end
       end
     end
   end
-  points
+  player_stats
 end
