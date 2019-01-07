@@ -162,7 +162,7 @@ def team_colors(team)
   colors = []
   game_hash.each do |location, data|
     data.each do |key, value|
-      if value == 'Brooklyn Nets'
+      if value == team
         colors = game_hash[location][:colors]
       end
     end
