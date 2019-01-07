@@ -126,7 +126,6 @@ def num_points_scored(player)
         value.each do |player_hash, data|
           if player_hash == player
             data.each do |statistic, num|
-              binding.pry
               if statistic == :points
                 points = num
               end
