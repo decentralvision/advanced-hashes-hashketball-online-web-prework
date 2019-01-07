@@ -126,7 +126,7 @@ def num_points_scored(player)
           if player_hash == player
             data.each do |stat, num|
               if stat == :points
-
+                points = num
               end
             end
           end
